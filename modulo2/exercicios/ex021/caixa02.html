@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        /*
+        cor principal - 
+        cor de fundo - #243782
+        cor header - #3B4E9B
+        cor main - 
+        cor footer - 
+
+        cores STL
+        #243782 - blue
+        #43aaa0  - mint
+        #eca935 - orange
+        #e94e24  - tangerine
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #243782;
+            color: white;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            color: #243782;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: #3B4E9B;
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.350);
+            /*box-shadow primeiro para direita | segundo para baixo | terceiro borrar | quarto espalhamento | quinto cor no caro preto */
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+
+        }
+
+        nav a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            color: #243782;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.350);
+        }
+
+        article{
+            background-color: #919bc0 ;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: #43aaa0 ;
+            color: white;
+        }
+        footer{
+            background-color: #282b34;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Tema 1 Tema 2 Tema 3</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o tema</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vitae, amet enim voluptatem temporibus, distinctio deleniti itaque, totam aspernatur similique placeat maxime exercitationem? Nemo minus quam deserunt. Cum, consequatur labore.</p>
+                <aside>
+                    <p>Artigo sobre o tema </p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Roberto Barreto</p>
+    </footer>
+</body>
+</html>

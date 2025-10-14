@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <!--
+    hover > p = o sinal de > indica uma filiação, ou seja, o que for aplicado para hover também será aplicado  no p que estiver dentro da tag div. Nesse exemplo o p TEXTO OCULTO está dentro da tag <div>, sendo que o <p> Fim do exercício não está e não receberá os efeitos.
+    -->
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+        div.hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO OCULTO</p>
+    </div>
+    <p>Fim do exercício</p>
+</body>
+</html>
